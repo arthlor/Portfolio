@@ -27,9 +27,9 @@ async function getSkills() {
 export default async function AboutPage() {
   const groupedSkills = await getSkills();
   return (
-    <div className="p-8">
+    <div className="px-8 py-16 sm:py-24">
       <AnimatedDiv>
-        <h1 className="text-4xl font-extrabold tracking-tight mb-8">About Me</h1>
+        <h1 className="text-4xl font-extrabold mb-8">About Me</h1>
         <div className="prose lg:prose-xl max-w-none dark:prose-invert">
           <p>
             I am a data journalist with a Master&apos;s in New Media, focusing on the intersection of

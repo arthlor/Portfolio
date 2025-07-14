@@ -5,7 +5,7 @@ import { ProjectsSkeleton } from '@/app/components/loaders/ProjectsSkeleton';
 
 export default async function HomePage() {
   return (
-    <section className="p-8">
+    <section className="px-8 py-16 sm:py-24">
       <AnimatedDiv>
         <div className="text-center my-16">
           <h1 className="text-5xl font-extrabold tracking-tight">Anil Karaca</h1>

@@ -34,9 +34,9 @@ export default async function ProjectsPage() {
   const tags = await getTags();
 
   return (
-    <section className="p-8">
+    <section className="px-8 py-16 sm:py-24">
       <AnimatedDiv>
-        <h1 className="text-4xl font-extrabold tracking-tight mb-8">All Work</h1>
+        <h1 className="text-4xl font-extrabold mb-8">All Work</h1>
       </AnimatedDiv>
       <AnimatedDiv delay={0.2}>
         <FilteredProjects projects={projects} tags={tags} />
