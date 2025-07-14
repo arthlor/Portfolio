@@ -67,3 +67,16 @@
     --ring: 217.2 32.6% 17.5%;
   }
 }
+
+@layer base {
+  body {
+    @apply text-foreground/80;
+    line-height: 1.7;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-tight;
+  }
+}
