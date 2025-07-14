@@ -26,9 +26,13 @@ type Project = {
   tags: string[];
 };
 
-type Props = { params: { slug: string } };
+interface ProjectPageProps {
+  params: {
+    slug: string;
+  };
+}
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: ProjectPageProps): Promise<Metadata> {
   const project: Project = await client.fetch(SINGLE_PROJECT_QUERY, { slug: params.slug });
   return {
     title: `${project.title} | Anil Karaca`,
@@ -41,7 +45,7 @@ export async function generateStaticParams() {
   return slugs.map(({ slug }) => ({ slug }));
 }
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const project: Project = await client.fetch(SINGLE_PROJECT_QUERY, { slug: params.slug });
   return (
     <AnimatedDiv className="p-8">
