@@ -43,7 +43,7 @@ This document tracks the development process for building the portfolio website,
 ## Phase 6: Deployment
 **Goal:** Push the final code to a repository and deploy it to a global hosting platform.
 
-- [ ] **6.1: Push to GitHub**: Commit all code changes and push the repository to GitHub.
+- [x] **6.1: Push to GitHub**: Commit all code changes and push the repository to GitHub.
 - [ ] **6.2: Deploy on Vercel**: Import the repository into Vercel and configure it for automatic deployment.
 
 ## Phase 7: Validation & Quality Assurance

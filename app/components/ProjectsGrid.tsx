@@ -19,7 +19,7 @@ export async function ProjectsGrid() {
   const projects = await getProjects();
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-12">
       {projects.map(project => (
         <ProjectCard
           key={project._id}

@@ -46,7 +46,7 @@ export async function generateStaticParams() {
 export default async function ProjectPage({ params }: { params: { slug: string } }) {
   const project: Project = await client.fetch(SINGLE_PROJECT_QUERY, { slug: params.slug });
   return (
-    <AnimatedDiv className="p-8">
+    <AnimatedDiv className="px-8 py-16 sm:py-24">
       <article>
         <h1 className="text-4xl font-extrabold my-8 text-center">{project.title}</h1>
         <Image
